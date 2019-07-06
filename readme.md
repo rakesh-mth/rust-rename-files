@@ -1,10 +1,13 @@
 # rust-rename-it
 Test code:
+```
 mkdir test
 touch test/rust.cha
 cargo run test cha txt
+```
 
 ->build for windows (cross compile on mac)
+```
 #install rust target for windows-gnu
 rustup target add x86_64-pc-windows-gnu
 #install toolchain
@@ -16,8 +19,10 @@ cat >>~/.cargo/config <<EOF
 > EOF
 #use target in cargo build
 cargo build --target=x86_64-pc-windows-gnu 
+```
 
 ->build for linux (cross compile on mac)
+```
 #install rust target for linux-gnu
 rustup target add x86_64-unknown-linux-gnu
 #install tollchain
@@ -29,3 +34,4 @@ cat >>~/.cargo/config <<EOF
 > EOF
 #use target in cargo build
 cargo build --target=x86_64-unknown-linux-gnu
+```
