@@ -14,7 +14,7 @@ fn main()
   let args = App::new("src-fmt-to-dst-fmt")
     .about("Rename .src_fmt to .dst_fmt")
     .setting(AppSettings::ArgRequiredElseHelp)
-    .arg(Arg::with_name(path_arg_name).help("path to the top directory with .cha files"))
+    .arg(Arg::with_name(path_arg_name).help("path to the top directory with .src_fmt files"))
     .arg(Arg::with_name(path_arg_src_ext).help("source file extention"))
     .arg(Arg::with_name(path_arg_dst_ext).help("destination file extention"))
     .get_matches();
